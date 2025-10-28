@@ -85,8 +85,8 @@ export default function App() {
           Average Points: <strong>{avgPoints.toFixed(1)}</strong>
         </p>
 
-        <footer>Built by Elif Yildiz — HDI Demo Project</footer>
-        <a target="_blank" href="https://github.com/ebyildiz/player-data-analysis/tree/main/small-app" style={{color:"#3b82f6", margin:"5px"}}>Link to Github</a>
+        <footer>Built by Elif Yildiz — HDI Demo Project   <a target="_blank" href="https://github.com/ebyildiz/player-data-analysis/tree/main/small-app" style={{color:"#3b82f6", margin:"5px"}}>Link to Github</a></footer>
+       
       </div>
     </>
   );

@@ -203,6 +203,7 @@ a {
   .chart-container {
     margin-top: 2rem; /* instead of margin:-10rem */
     transform: translateY(-3rem);
+    height: auto;
     
   }
 
@@ -224,7 +225,7 @@ a {
     display: flex;
     min-width: 200px;
     max-width: 300px;
-    max-height: 800px;
+    max-height: max-content;
   }
   
   div > h1 {

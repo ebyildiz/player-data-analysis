@@ -194,6 +194,8 @@ footer {
 
   .chart-container {
     margin-top: 2rem; /* instead of margin:-10rem */
+    transform: translateY(-3rem);
+    
   }
 
   .legend-wrapper {

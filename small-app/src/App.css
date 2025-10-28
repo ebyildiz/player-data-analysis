@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10px;
   font-family: 'Inter', sans-serif;
   background-color: #e8f0e9;
   color: #333;
@@ -126,10 +126,17 @@ select {
 }
 
 footer {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
   font-size: 0.9rem;
   color: #777;
+  gap: 1px;
+}
+
+a {
+  margin: 10px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -217,7 +224,7 @@ footer {
     display: flex;
     min-width: 200px;
     max-width: 300px;
-    max-height: 700px;
+    max-height: 800px;
   }
   
   div > h1 {

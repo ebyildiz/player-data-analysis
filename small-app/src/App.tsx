@@ -37,7 +37,7 @@ export default function App() {
         <span
           key={key}
           onClick={() => toggleKey(key)}
-          className={`key-option ${visibleKeys[key] ? "active" : "inactive"} ${key==="points"||key==="assists"? (key==="points" ? "points" : "assists") : "rebounds"}`}
+          className={`key-option ${visibleKeys[key] ? "active" : "inactive"} ${key === "points" || key === "assists" ? (key === "points" ? "points" : "assists") : "rebounds"}`}
         >
           {key.charAt(0).toUpperCase() + key.slice(1)}
         </span>
@@ -54,7 +54,7 @@ export default function App() {
       </header>
       <div className="container">
         <h1>Basketball Stats Dashboard</h1>
-        <p style={{marginTop:"20px", marginBottom:"15px"}}>Select a player to view their performance across games.</p>
+        <p style={{ marginTop: "20px", marginBottom: "15px" }}>Select a player to view their performance across games.</p>
         <select
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
@@ -63,14 +63,14 @@ export default function App() {
             <option key={player}>{player}</option>
           ))}
         </select>
-        
+
 
         <div className="chart-container">
           <ResponsiveContainer width="95%" height={300}>
             <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="game" />
-              <YAxis domain={[0, 40]}/>
+              <YAxis domain={[0, 40]} />
               <Tooltip />
               {visibleKeys.points && <Bar dataKey="points" fill="#3b82f6" />}
               {visibleKeys.assists && <Bar dataKey="assists" fill="#82ca9d" />}
@@ -85,8 +85,10 @@ export default function App() {
           Average Points: <strong>{avgPoints.toFixed(1)}</strong>
         </p>
 
-        <footer>Built by Elif Yildiz — HDI Demo Project   <a target="_blank" href="https://github.com/ebyildiz/player-data-analysis/tree/main/small-app" style={{color:"#3b82f6", margin:"5px"}}>Link to Github</a></footer>
-       
+        <footer>
+          <p>Built by Elif Yildiz – HDI Demo Project</p>
+          <a target="_blank" href="https://github.com/ebyildiz/player-data-analysis/tree/main/small-app" style={{ color: "#3b82f6", fontSize:"17px", margin:"10px" }}>Link to Github</a>
+        </footer>
       </div>
     </>
   );

@@ -193,9 +193,7 @@ footer {
   }
 
   .chart-container {
-    margin:-10rem;
-    
-  
+    margin-top: 2rem; /* instead of margin:-10rem */
   }
 
   .legend-wrapper {

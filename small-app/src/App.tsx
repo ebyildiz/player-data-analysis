@@ -55,7 +55,6 @@ export default function App() {
       <div className="container">
         <h1>Basketball Stats Dashboard</h1>
         <p style={{marginTop:"20px", marginBottom:"15px"}}>Select a player to view their performance across games.</p>
-        <span style={{margin:"10px", marginLeft:"-20PX"}}>Player:</span>
         <select
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
@@ -64,17 +63,13 @@ export default function App() {
             <option key={player}>{player}</option>
           ))}
         </select>
+        
 
         <div className="chart-container">
           <ResponsiveContainer width="95%" height={300}>
             <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="game" label={{
-                value: "Game:",
-                angle: 0,
-                position: "left",
-                style: { textAnchor: "start", fill: "#555", fontWeight: 400}
-              }} />
+              <XAxis dataKey="game" />
               <YAxis domain={[0, 40]}/>
               <Tooltip />
               {visibleKeys.points && <Bar dataKey="points" fill="#3b82f6" />}

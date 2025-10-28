@@ -3,10 +3,17 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #e8f0e9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
 .container {
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 800px;
+  max-width: 1000px;
   height: auto;
   margin: 2rem auto;
   padding: 1rem 2rem;
@@ -63,7 +70,7 @@ select {
 }
 
 .key-option {
-  margin: 0 10px;
+  margin: 5px;
   cursor: pointer;
   padding: 6px 10px;
   border-radius: 5px;;
@@ -122,4 +129,105 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #777;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  select {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  span{
+    font-size: 25px;
+  }
+  .chart-container {
+    height: 800px;
+  }
+  .container {
+    display: flex;
+    min-width: 500px;
+    max-width: 700px;
+    height: 1000px;
+  }
+  div > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .logo {
+    width: 150px;
+    margin: 5px;
+  }
+  .main-title {
+    font-size: 12px;
+  }
+
+}
+
+
+
+@media screen  and (max-width: 768px) {
+  body {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  select { 
+    font-size: 15px;
+    margin: 20px;
+    padding:  2px 4px;
+  }
+
+  .chart-container {
+    margin:-10rem;
+    
+  
+  }
+
+  .legend-wrapper {
+    margin: 10px
+  }
+
+
+  p {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  span{
+    font-size: 15px;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 700px;
+  }
+  
+  div > h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .logo {
+    width: 150px;
+    margin: 5px;
+  }
+  .main-title {
+    font-size: 12px;
+  }
 }

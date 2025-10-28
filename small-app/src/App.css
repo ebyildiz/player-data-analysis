@@ -139,6 +139,10 @@ a {
   margin: 10px;
 }
 
+a:hover {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1300px) {
   body {
     max-width: 1300px;

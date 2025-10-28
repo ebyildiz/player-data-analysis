@@ -86,6 +86,7 @@ export default function App() {
         </p>
 
         <footer>Built by Elif Yildiz — HDI Demo Project</footer>
+        <a target="_blank" href="https://github.com/ebyildiz/player-data-analysis/tree/main/small-app" style={{color:"#3b82f6", margin:"5px"}}>Link to Github</a>
       </div>
     </>
   );
